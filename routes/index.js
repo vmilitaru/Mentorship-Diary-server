@@ -26,7 +26,7 @@ router.post("/", async (req, res) => {
   const { data } = req.body;
   const myNewData = await createData(data);
   console.log(myNewData);
-  res.json({ message: `You have added new data ${myNewData.week}` });
+  res.json({ message: `You have added new data` });
 });
 
 module.exports = router;

@@ -15,17 +15,16 @@ async function getDataByDate(id) {
 }
 
 async function createData(data) {
-  const { week, q1, q2, q3, q4, q5 } = data;
+  const { q1, q2, q3, q4, q5 } = data;
   const res = await query(
     `INSERT INTO weeklyQuestions (
-            week
             ,q1
             ,q2
             ,q3
             ,q4
             ,q5
-        ) VALUES($1, $2, $3, $4, $5, $6) RETURNING week`,
-    [week, q1, q2, q3, q4, q5]
+        ) VALUES($1, $2, $3, $4, $5) RETURNING *`,
+    [q1, q2, q3, q4, q5]
   );
   return res.rows[0];
 }

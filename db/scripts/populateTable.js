@@ -2,7 +2,6 @@ const { query } = require("../index");
 
 const mockTable = [
   {
-    week: "Week One",
     q1: "lorem ipum",
     q2: "more data",
     q3: "even more data",
@@ -10,7 +9,6 @@ const mockTable = [
     q5: "so much data",
   },
   {
-    week: "Week Two",
     q1: "lorem ipum",
     q2: "more data",
     q3: "even more data",
@@ -19,7 +17,7 @@ const mockTable = [
   },
 ];
 
-const text = `INSERT INTO weeklyQuestions(week,q1,q2,q3,q4,q5) VALUES($1, $2, $3, $4, $5, $6) RETURNING *`;
+const text = `INSERT INTO weeklyQuestions(q1,q2,q3,q4,q5) VALUES($1, $2, $3, $4, $5) RETURNING *`;
 
 async function populateTable() {
   for (let i = 0; i < mockTable.length; i++) {
