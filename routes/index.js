@@ -24,6 +24,7 @@ router.get("/:id", async (req, res) => {
 
 router.post("/", async (req, res) => {
   const { data } = req.body;
+  console.log(req.body);
   const myNewData = await createData(data);
   console.log(myNewData);
   res.json({ message: `You have added new data` });

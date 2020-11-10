@@ -15,10 +15,12 @@ async function getDataByDate(id) {
 }
 
 async function createData(data) {
+  console.log(data);
   const { q1, q2, q3, q4, q5 } = data;
+
   const res = await query(
     `INSERT INTO weeklyQuestions (
-            ,q1
+            q1
             ,q2
             ,q3
             ,q4
