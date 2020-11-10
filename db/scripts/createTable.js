@@ -5,7 +5,7 @@ const sqlStatement = `
     CREATE TABLE weeklyQuestions(
  
     id SERIAL PRIMARY KEY,
-    date DATE,
+    week VARCHAR,
     q1 TEXT,
     q2 TEXT,
     q3 TEXT,
