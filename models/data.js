@@ -5,7 +5,7 @@ async function getData() {
   return questions.rows;
 }
 
-async function getDataByDate(date) {
+async function getDataByDate(week) {
   const questions = await query(
     `SELECT * FROM weeklyQuestions WHERE week= $1 `,
     [week]
