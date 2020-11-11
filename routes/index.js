@@ -14,10 +14,10 @@ router.get("/", async function (req, res) {
   res.json({ message: "success", payload: data });
 });
 
-router.get("/:date", async (req, res) => {
-  const date = req.params.date;
-  console.log(date);
-  const data = await getDataByDate(date);
+router.get("/:weekNum", async (req, res) => {
+  const week = req.params.weekNum;
+  console.log(week);
+  const data = await getDataByDate(week);
   console.log(data);
   res.json({ success: true, payload: data });
 });
