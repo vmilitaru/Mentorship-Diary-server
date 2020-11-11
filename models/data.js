@@ -7,7 +7,7 @@ async function getData() {
 
 async function getDataByDate(date) {
   const questions = await query(
-    `SELECT * FROM weeklyQuestions WHERE id = $1 `,
+    `SELECT * FROM weeklyQuestions WHERE date= $1 `,
     [date]
   );
 
