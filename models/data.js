@@ -7,8 +7,8 @@ async function getData() {
 
 async function getDataByDate(date) {
   const questions = await query(
-    `SELECT * FROM weeklyQuestions WHERE weekNum= $1 `,
-    [weekNum]
+    `SELECT * FROM weeklyQuestions WHERE week= $1 `,
+    [week]
   );
 
   return questions.rows[0];
@@ -16,18 +16,18 @@ async function getDataByDate(date) {
 
 async function createData(data) {
   console.log(data);
-  const { weekNum, q1, q2, q3, q4, q5 } = data;
+  const { week, q1, q2, q3, q4, q5 } = data;
 
   const res = await query(
     `INSERT INTO weeklyQuestions (
-      weekNum,
+      week,
             q1
             ,q2
             ,q3
             ,q4
             ,q5
         ) VALUES($1, $2, $3, $4, $5, $6) RETURNING *`,
-    [weekNum, q1, q2, q3, q4, q5]
+    [week, q1, q2, q3, q4, q5]
   );
   return res.rows[0];
 }
