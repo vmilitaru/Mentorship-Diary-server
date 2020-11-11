@@ -26,7 +26,7 @@ async function createData(data) {
             ,q3
             ,q4
             ,q5
-        ) VALUES($1, $2, $3, $4, $5, date) RETURNING *`,
+        ) VALUES($1, $2, $3, $4, $5, $6) RETURNING *`,
     [date, q1, q2, q3, q4, q5]
   );
   return res.rows[0];
