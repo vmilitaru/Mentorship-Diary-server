@@ -20,7 +20,7 @@ async function createData(data) {
 
   const res = await query(
     `INSERT INTO weeklyQuestions (
-      date,
+      weekNum,
             q1
             ,q2
             ,q3
