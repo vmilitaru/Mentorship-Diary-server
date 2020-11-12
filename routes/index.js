@@ -22,6 +22,15 @@ router.get("/:week", async (req, res) => {
   res.json({ success: true, payload: data });
 });
 
+router.get("/:uuid", async (req, res) => {
+  const uuid = req.params.uuid;
+
+  console.log(uuid);
+  const data = await getDataByDate(uuid);
+  console.log(data);
+  res.json({ success: true, payload: data });
+});
+
 router.post("/", async (req, res) => {
   const { data } = req.body;
   console.log(req.body);
