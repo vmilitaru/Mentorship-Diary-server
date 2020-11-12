@@ -6,9 +6,10 @@ async function getData() {
 }
 
 async function getDataByDate(week) {
-  const questions = await query(`SELECT * FROM weeklyQuestions WHERE id = $1`, [
-    week,
-  ]);
+  const questions = await query(
+    `SELECT * FROM weeklyQuestions WHERE week = $1`,
+    [week]
+  );
 
   return questions.rows[0];
 }
