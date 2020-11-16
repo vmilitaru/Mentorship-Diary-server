@@ -14,8 +14,8 @@ app.use(cors());
 
 app.use("/", indexRouter);
 
-app.listen(port, () => {
-  console.log(`Server listening on port ${port}`);
-});
+app.listen(process.env.PORT || port, () =>
+  console.log(`Server is running...${port}`)
+);
 
 module.exports = app;
