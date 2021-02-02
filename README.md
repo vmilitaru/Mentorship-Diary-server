@@ -1,4 +1,4 @@
-# Mentorship Diary Application - Back End 
+# Mentorship Diary Application 
 
 Our project brief was to build an app that would enhance the School of Code mentoring experience and the solution that the team of 4 people I was working in, managed to come up with in less than a week was this tool that allows [School of Code](https://www.schoolofcode.co.uk/) bootcampers to track and document their mentor/mentee relantionship.This is basically an online diary of the [School of Code](https://www.schoolofcode.co.uk/) bootcamper mentorship journey.
 
@@ -63,7 +63,7 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.
+Runs the server in the development mode.
 
 ### `npm createTable`
 
