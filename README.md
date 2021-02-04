@@ -64,7 +64,7 @@ To connect the server with your Heroku database you'll need to locate your crede
 
 9. Copy the content of `.env.example` into a new file called `.env.local` at the root of this project, then add the missing environment variables:
 
-  - `PGHOST`, `PGUSER`, `PGDATABASE`, `PGPASSWORD` and `PGPORT` - Can be found in the _Heroku Dashboard>Your App>Overview>Heroku Postgres>Settings_ under _View Credentials_
+    - `PGHOST`, `PGUSER`, `PGDATABASE`, `PGPASSWORD` and `PGPORT` - Can be found in the _Heroku Dashboard>Your App>Overview>Heroku Postgres>Settings_ under _View Credentials_
 
 
 ## Available Scripts
