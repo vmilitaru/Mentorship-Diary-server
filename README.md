@@ -63,39 +63,8 @@ To connect the server with your Heroku database you'll need to locate your crede
 
 9. Copy the content of `.env.example` into a new file called `.env.local` at the root of this project, then add the missing environment variables:
 
-    - `PGHOST`, `PGUSER`, `PGDATABASE`, `PGPASSWORD` and `PGPORT` - Can be found in the _Heroku Dashboard>Your App>Overview>Heroku Postgres>Settings_ under _View Credentials_
+  - `PGHOST`, `PGUSER`, `PGDATABASE`, `PGPASSWORD` and `PGPORT` - Can be found in the _Heroku Dashboard>Your App>Overview>Heroku Postgres>Settings_ under _View Credentials_
 
-# Deploy on Heroku
-
-You can deploy this server to the cloud with [Heroku](https://signup.heroku.com/login) ([Documentation](https://devcenter.heroku.com/categories/reference#deployment)).
-
-### Deploy Your Local Project 
-
-One way of deploying your local project to Heroku is with GitHub.
-
-10. Push your code  to GitHub and make sure you granted access to your **Heroku** account as well to your Github account.You can check that in _Account Settings_ under _Applications_ tab in _Third-party Services_ section. 
-
-11. Then navigate back to your project and under the _Deploy_ tab select as the _Deployment method_: _Github_. 
-
-12. Select the GitHub account where your repository is and search the repo you want to connect with, then click _Connect_. 
-
-13. Make sure to enable the _Automatic deploys_ section if you want to re-deploy your code for every change you push up to GitHub.
-
-14. Select the relevant branch you want to deploy and click _Deploy Branch_.
-
-15. In the _Activity_ tab you can check the deployment progress and when the app goes live.
-
-**Important**:  We still need to connect the server with the database and the way to do that is to specify our **Environment Variables** in the deployed application. 
-
-16. Go to _Settings_ tab and in the _Config Vars_ section under the _Reveal Config Vars_ menu you will be able to insert all your local **Environment Variables**.
-
-17. When you are using a Heroku Postgres database you are given a `DATABASE_URL` that now you can use to connect your express server to. This URL is a replacement of the current PG credentials that you have on your local environment variables file. 
-
-18. Depending on the frameworks or programming languages that you use you need to configure the  db accordingly 👉 [Documentation](https://devcenter.heroku.com/articles/heroku-postgresql)
-
-19. After you updated the code accordingly save the code and push it up to GitHub. If you enabled _Automatic deploys_ the app will be automatically re-deployed.
-
-20. If you go to _Settings_ tab under _Domains_ section you will be able to find the live url of your app. 
 
 ## Available Scripts
 
@@ -109,7 +78,37 @@ Runs the server in the development mode.
 
 This script is creating the table in your new set up Heroku data base.
 
+# Deploy on Heroku
 
+You can deploy this server to the cloud with [Heroku](https://signup.heroku.com/login) ([Documentation](https://devcenter.heroku.com/categories/reference#deployment)).
+
+### Deploy Your Local Project 
+
+One way of deploying your local project to Heroku is with GitHub.
+
+- Push your code  to GitHub and make sure you granted access to your **Heroku** account as well to your Github account.You can check that in _Account Settings_ under _Applications_ tab in _Third-party Services_ section. 
+
+- Then navigate back to your project and under the _Deploy_ tab select as the _Deployment method_: _Github_. 
+
+- Select the GitHub account where your repository is and search the repo you want to connect with, then click _Connect_. 
+
+- Make sure to enable the _Automatic deploys_ section if you want to re-deploy your code for every change you push up to GitHub.
+
+- Select the relevant branch you want to deploy and click _Deploy Branch_.
+
+- In the _Activity_ tab you can check the deployment progress and when the app goes live.
+
+**Important**:  We still need to connect the server with the database and the way to do that is to specify our **Environment Variables** in the deployed application. 
+
+- Go to _Settings_ tab and in the _Config Vars_ section under the _Reveal Config Vars_ menu you will be able to insert all your local **Environment Variables**.
+
+- When you are using a Heroku Postgres database you are given a `DATABASE_URL` that now you can use to connect your express server to. This URL is a replacement of the current PG credentials that you have on your local environment variables file. 
+
+- Depending on the frameworks or programming languages that you use you need to configure the  db accordingly 👉 [Documentation](https://devcenter.heroku.com/articles/heroku-postgresql)
+
+- After you updated the code accordingly save the code and push it up to GitHub. If you enabled _Automatic deploys_ the app will be automatically re-deployed.
+
+- If you go to _Settings_ tab under _Domains_ section you will be able to find the live url of your app. 
 
 
 ## Contributors ✨
