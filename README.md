@@ -34,6 +34,7 @@ Here is the [deployed version](https://mentorship-diary.netlify.app/).
 - [Node](https://nodejs.org/en/)
 - [Express](https://expressjs.com/)
 - [PostgreSQL](https://www.postgresql.org/)
+- [Heroku](https://www.heroku.com/)
 
 ## Getting started
 
@@ -80,7 +81,7 @@ This script is creating the table in your new set up Heroku data base.
 
 # Deploy on Heroku
 
-You can deploy this server to the cloud with [Heroku](https://signup.heroku.com/login) ([Documentation](https://devcenter.heroku.com/categories/reference#deployment)).
+You can deploy this server to the cloud with [Heroku](https://www.heroku.com/) ([Documentation](https://devcenter.heroku.com/categories/reference#deployment)).
 
 ### Deploy Your Local Project 
 
