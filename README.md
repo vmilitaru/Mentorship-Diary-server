@@ -10,7 +10,7 @@ The application consist of a **Home** page:
 
 ![mentorship-diary-weekly-form](https://user-images.githubusercontent.com/70764326/106596972-a9c3ca00-654d-11eb-91ce-7102d9c0c75f.png)
 
-The data can be viewed on the **Achievement History** page by selecting the prefered week to review.
+The data is unique to user and can be viewed on the **Achievement History** page by selecting the prefered week to review.
 
 ![mentorship-diary-achievement-history](https://user-images.githubusercontent.com/70764326/106597157-edb6cf00-654d-11eb-9ddc-61c80685a7ec.png)
 
